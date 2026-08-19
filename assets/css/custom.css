@@ -84,6 +84,34 @@ body.site-shell {
 .article-body .article-post a { color: var(--accent); }
 .article-body .article-post blockquote { border-left-color: var(--accent); color: var(--muted); }
 .article-body .taglist a { color: #000049; }
+.article-body .article-post pre {
+    display: block;
+    overflow-x: auto;
+    margin: 1.5rem 0 2rem;
+    padding: 1.2rem 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: #05052f;
+    color: #f4f4ff;
+    font-family: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+    font-size: .9rem;
+    line-height: 1.65;
+    white-space: pre;
+}
+.article-body .article-post pre code {
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+.article-body .article-post pre .k,
+.article-body .article-post pre .nf,
+.article-body .article-post pre .nb { color: #80d8ff; }
+.article-body .article-post pre .s2,
+.article-body .article-post pre .s1,
+.article-body .article-post pre .si { color: #ffd166; }
+.article-body .article-post pre .c1 { color: #aab3c8; }
 .article-body .share .a2a_kit { display: flex !important; align-items: center; gap: 8px; }
 .article-body .share .a2a_kit > a { display: inline-flex !important; float: none !important; margin: 0 !important; }
 @media (max-width: 760px) {

@@ -1,11 +1,13 @@
 :root {
-    --bg: #111315;
-    --surface: #191c1f;
-    --surface-soft: #202428;
-    --border: #30363b;
-    --text: #e7e9ea;
-    --muted: #9aa3aa;
-    --accent: #d99a52;
+    --bg: #000049;
+    --surface: #080856;
+    --surface-soft: #11115f;
+    --border: #35357c;
+    --text: #ffffff;
+    --muted: #d0d0e6;
+    --accent: #ffd166;
+    --font-body: "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    --font-heading: "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -15,12 +17,12 @@ body.site-shell {
     padding: 0;
     color: var(--text);
     background: var(--bg);
-    font-family: -apple-system, BlinkMacSystemFont, "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-family: var(--font-body);
     line-height: 1.8;
 }
 .site-header {
     border-bottom: 1px solid var(--border);
-    background: rgba(17, 19, 21, .96);
+    background: rgba(0, 0, 73, .96);
 }
 .site-header-inner, .site-content, .site-footer-inner {
     width: min(1120px, calc(100% - 40px));
@@ -38,6 +40,7 @@ body.site-shell {
 .site-nav a, .sidebar-link { color: var(--muted); font-size: .9rem; }
 .site-nav a:hover, .sidebar-link:hover, .post-card h2 a:hover { color: var(--accent); }
 .site-content { padding: 64px 0 90px; }
+.post-page .site-content { padding-top: 0; }
 .home-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 72px; }
 .section-heading { border-bottom: 1px solid var(--border); margin-bottom: 8px; padding-bottom: 18px; }
 .eyebrow { color: var(--accent); font-size: .7rem; font-weight: 700; letter-spacing: .16em; margin: 0 0 5px; }
@@ -61,11 +64,30 @@ body.site-shell {
 .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: .8rem; }
 .site-footer-inner { display: flex; justify-content: space-between; padding: 24px 0; }
 .empty-state { color: var(--muted); }
+.site-shell a { color: var(--text); }
+.site-shell a:hover { color: var(--accent); }
+.site-brand, .site-nav a, .sidebar-link { font-family: var(--font-heading); }
+.article-header { margin-top: 0; }
+.article-title-block { background: var(--surface); border: 1px solid var(--border); padding: 28px 34px; }
+.article-title-block .row { margin: 0; }
+.article-title-block .col-md-6, .article-title-block .col-md-8 { padding-top: 0 !important; padding-bottom: 0 !important; }
+.article-title-block .article-headline { color: var(--text); font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.2rem); margin: 8px 0 0 !important; }
+.article-title-block .text-uppercase { color: var(--accent); }
+.article-title-block .text-muted, .article-title-block small { color: var(--muted) !important; }
+.article-body { padding-top: 28px; }
+.article-body .article-post { color: var(--text); font-family: var(--font-body); }
+.article-body .article-post:first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0; }
+.article-body .article-post h1, .article-body .article-post h2, .article-body .article-post h3,
+.article-body .article-post h4, .article-body .article-post h5, .article-body .article-post h6 { color: var(--text); font-family: var(--font-heading); }
+.article-body .article-post a { color: var(--accent); }
+.article-body .article-post blockquote { border-left-color: var(--accent); color: var(--muted); }
+.article-body .taglist a { color: #000049; }
 @media (max-width: 760px) {
     .site-header-inner, .site-content, .site-footer-inner { width: min(100% - 28px, 600px); }
     .site-header-inner { align-items: flex-start; flex-direction: column; padding: 18px 0; }
     .site-nav { flex-wrap: wrap; gap: 8px 18px; }
     .site-content { padding-top: 38px; }
+    .article-title-block { padding: 22px 18px; }
     .home-layout { display: block; }
     .home-sidebar { border-left: 0; border-top: 1px solid var(--border); margin-top: 44px; padding: 32px 0 0; }
     .site-footer-inner { display: block; }

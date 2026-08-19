@@ -64,6 +64,7 @@ body.site-shell {
 .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: .8rem; }
 .site-footer-inner { display: flex; justify-content: space-between; padding: 24px 0; }
 .empty-state { color: var(--muted); }
+.author-page .excerpt, .listauthor .excerpt { color: var(--text) !important; }
 .site-shell a { color: var(--text); }
 .site-shell a:hover { color: var(--accent); }
 .site-brand, .site-nav a, .sidebar-link { font-family: var(--font-heading); }

@@ -84,6 +84,8 @@ body.site-shell {
 .article-body .article-post a { color: var(--accent); }
 .article-body .article-post blockquote { border-left-color: var(--accent); color: var(--muted); }
 .article-body .taglist a { color: #000049; }
+.article-body .share .a2a_kit { display: flex !important; align-items: center; gap: 8px; }
+.article-body .share .a2a_kit > a { display: inline-flex !important; float: none !important; margin: 0 !important; }
 @media (max-width: 760px) {
     .site-header-inner, .site-content, .site-footer-inner { width: min(100% - 28px, 600px); }
     .site-header-inner { align-items: flex-start; flex-direction: column; padding: 18px 0; }

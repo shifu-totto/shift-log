@@ -1,7 +1,18 @@
-<h5 class="mb-3">Mundana Jekyll Theme</h5>
+<section class="sidebar-block author-sidebar">
+    <p class="eyebrow">ABOUT THE AUTHOR</p>
+    {% assign author = site.authors.Shifu-totto %}
+    {% if author.avatar %}
+    <img class="author-avatar" src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}">
+    {% endif %}
+    <h2>{{ author.name }}</h2>
+    <p>{{ author.bio }}</p>
+    {% if author.twitter %}<a class="sidebar-link" href="{{ author.twitter }}" target="_blank" rel="noopener">X / @Shifu_totto</a>{% endif %}
+</section>
 
-<p>Hi! The website you are previewing is a demonstration for Mundana Jekyll theme, hosted on Github, made by <a href="https://www.wowthemes.net/donate/">Sal</a>.</p>
-
-<a target="_blank" href="https://www.wowthemes.net/mundana-jekyll-theme/" class="btn btn-warning d-block mb-2"><i class="fa fa-file"></i> Documentation</a>
-
-<a target="_blank" class="btn btn-danger d-block" href="https://www.wowthemes.net/donate/"><i class="fa fa-coffee"></i> Buy me a coffee</a> 
+<section class="sidebar-block">
+    <p class="eyebrow">NAVIGATION</p>
+    <a class="sidebar-link" href="{{ site.baseurl }}/authors-list.html">著者について</a>
+    <a class="sidebar-link" href="{{ site.baseurl }}/categories.html">カテゴリ</a>
+    <a class="sidebar-link" href="{{ site.baseurl }}/tags.html">タグ</a>
+    <a class="sidebar-link" href="{{ site.baseurl }}/contact.html">お問い合わせ</a>
+</section>

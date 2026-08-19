@@ -121,7 +121,7 @@ layout: default
                 {% endif %}
             
             <!-- Comments -->
-            {% if page.comments != false %}
+			{% if site.disqus and page.comments != false %}
                 {% include comments.html %}
             {% endif %}
             

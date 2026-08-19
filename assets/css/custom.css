@@ -1,13 +1,13 @@
 :root {
-    --bg: #000049;
-    --surface: #080856;
-    --surface-soft: #11115f;
-    --border: #35357c;
+    --bg: #00002b;
+    --surface: #07073c;
+    --surface-soft: #0d0d49;
+    --border: #292963;
     --text: #ffffff;
     --muted: #d0d0e6;
     --accent: #ffd166;
-    --font-body: "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    --font-heading: "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    --font-body: "Noto Sans", "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    --font-heading: "Noto Sans", "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -16,13 +16,14 @@ body.site-shell {
     margin: 0;
     padding: 0;
     color: var(--text);
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image: radial-gradient(circle at 15% 10%, rgba(48, 48, 120, .18), transparent 32%), radial-gradient(circle at 85% 75%, rgba(20, 20, 76, .2), transparent 38%);
     font-family: var(--font-body);
     line-height: 1.8;
 }
 .site-header {
     border-bottom: 1px solid var(--border);
-    background: rgba(0, 0, 73, .96);
+    background: rgba(0, 0, 43, .96);
 }
 .site-header-inner, .site-content, .site-footer-inner {
     width: min(1120px, calc(100% - 40px));

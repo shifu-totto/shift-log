@@ -3,7 +3,7 @@ name: 'Shift-log'
 description: '技術とゲームと雑記'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-url: 'https://github.com/shifu-totto/shift-log'
+url: 'https://shifu-totto.github.io'
 baseurl: '/shift-log'
 disqus: ''
 email: 'wowthemesnet@gmail.com'
@@ -18,7 +18,6 @@ authors:
       avatar:         /assets/images/avatar1.jpg
       bio:            "気になったこと全部書いてます"
       twitter:        https://x.com/Shifu_totto
-      Twitch:         https://www.twitch.tv/shifu_totto
 
 # Defaults
 defaults:

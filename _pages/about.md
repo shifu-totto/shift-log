@@ -2,10 +2,9 @@
 title: "About"
 layout: page-sidebar
 permalink: "/about.html"
-image: "/assets/images/screenshot.jpg"
 comments: true
 ---
-### Welcome to My Blog!
+### Welcome to My Web log!
 
 セキュリティエンジニアとして学びながら働き、日々の学びや趣味の記録を綴っているブログです。
 
@@ -20,6 +19,4 @@ comments: true
 * **Outdoor:** サバイバルゲーム（サバゲー）
 
 技術的なアウトプットを中心に、趣味のガジェットやライフスタイルについても気ままに発信していきます。
-よろしくどうぞ！
-
-Made with <i class="fa fa-heart text-danger"></i> by Sal [@wowthemesnet](https://www.wowthemes.net/category/free-themes-templates/).
+よろしくどうぞ

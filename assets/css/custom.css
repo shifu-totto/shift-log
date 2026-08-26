@@ -83,7 +83,7 @@ body.site-shell {
 .article-body .article-post h4, .article-body .article-post h5, .article-body .article-post h6 { color: var(--text); font-family: var(--font-heading); }
 .article-body .article-post a { color: var(--accent); }
 .article-body .article-post blockquote { border-left-color: var(--accent); color: var(--muted); }
-.article-body .taglist a { color: #000049; }
+.article-body .taglist a { color: var(--text); }
 .article-body .article-post pre {
     display: block;
     overflow-x: auto;

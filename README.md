@@ -1,1 +1,1 @@
--> https://shifu-totto.github.io/shift-log/
+# Blog is [here](https://shifu-totto.github.io/shift-log/)

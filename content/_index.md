@@ -1,4 +1,4 @@
 ---
-title: "ホーム"
-description: "技術、ゲーム、日々の記録"
+title: "Shift-log"
+description: "技術とゲームと雑記"
 ---

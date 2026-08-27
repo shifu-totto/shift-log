@@ -2,37 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/shift-log/tags/fivem/</loc>
-    <lastmod>2026-08-26T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/categories/game/</loc>
-    <lastmod>2026-08-26T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/2026-08-26-review_of_natown/</loc>
-    <lastmod>2026-08-26T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/posts/</loc>
-    <lastmod>2026-08-26T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/</loc>
-    <lastmod>2026-08-26T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/about.html</loc>
-  </url><url>
     <loc>http://localhost:1313/shift-log/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/shift-log/buy-me-a-coffee.html</loc>
+    <loc>http://localhost:1313/shift-log/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/shift-log/categories.html</loc>
+    <loc>http://localhost:1313/shift-log/</loc>
   </url><url>
-    <loc>http://localhost:1313/shift-log/contact.html</loc>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/privacy-policy.html</loc>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/author-shifu-totto.html</loc>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/tags.html</loc>
-  </url><url>
-    <loc>http://localhost:1313/shift-log/authors-list.html</loc>
+    <loc>http://localhost:1313/shift-log/tags/</loc>
   </url>
 </urlset>

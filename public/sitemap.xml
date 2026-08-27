@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/shift-log/archives/</loc>
+    <loc>https://shifu-totto.github.io/shift-log/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/shift-log/categories/</loc>
+    <loc>https://shifu-totto.github.io/shift-log/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/shift-log/</loc>
+    <loc>https://shifu-totto.github.io/shift-log/</loc>
   </url><url>
-    <loc>http://localhost:1313/shift-log/tags/</loc>
+    <loc>https://shifu-totto.github.io/shift-log/tags/</loc>
   </url>
 </urlset>

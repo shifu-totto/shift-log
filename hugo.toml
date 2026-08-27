@@ -1,0 +1,78 @@
+baseURL = 'https://shifu-totto.github.io/shift-log/'
+locale = 'ja-jp'
+title = 'Shift-log'
+relativeURLs = false
+canonifyURLs = false
+staticDir = ['assets']
+author = 'Shifu-totto'
+DefaultContentLanguage = 'ja'
+hasCJKLanguage = true
+enableRobotsTXT = true
+theme = 'Blonde'
+
+[params]
+  description = '技術とゲームと雑記'
+  email = 'wowthemesnet@gmail.com'
+  favicon = 'assets/images/favicon.ico'
+  authorName = 'Shifu-totto'
+  authorSite = 'https://shifu-totto.github.io/shift-log/'
+  authorAvatar = 'assets/images/avatar1.jpg'
+  authorBio = '気になったこと全部書いてます'
+  authorTwitter = 'https://x.com/Shifu_totto'
+
+  base_color = 'bg-gray-800'
+  paginator_pages = 6
+  darkmode = 'light'
+  recentLimit = 5
+  tagsLimit = 20
+
+  [params.post]
+    thumbnail = true
+    noimage = true
+    description = '150'
+
+  [params.widgets]
+    display = true
+    mobile = true
+    widgets = ['search', 'archive', 'category', 'tags', 'social', 'recent']
+
+  [params.share]
+    enable = true
+
+[[menu.main]]
+  identifier = 'home'
+  name = 'ホーム'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  identifier = 'articles'
+  name = '記事一覧'
+  url = '/authors-list.html'
+  weight = 2
+
+[[menu.main]]
+  identifier = 'contact'
+  name = 'お問い合わせ'
+  url = '/contact.html'
+  weight = 3
+
+[permalinks]
+  posts = '/:contentbasename/'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  archive = 'archives'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
+[outputs]
+  home = ['HTML', 'RSS']

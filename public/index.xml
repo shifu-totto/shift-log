@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>ホーム on Shift-log</title>
+		<link>http://localhost:1313/shift-log/</link>
+		<description>Recent content in ホーム on Shift-log</description>
+		<generator>Hugo</generator>
+		<language>ja-jp</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0900</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/shift-log/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>NA Town振り返り(市長版)</title>
+				<link>http://localhost:1313/shift-log/2026-08-26-review_of_natown/</link>
+				<pubDate>Wed, 26 Aug 2026 00:00:00 +0900</pubDate>
+				<guid>http://localhost:1313/shift-log/2026-08-26-review_of_natown/</guid>
+				<description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;h2 id=&#34;na-town&#34;&gt;NA Town&lt;/h2&gt;&#xA;&lt;p&gt;つい先日の8/10 - 8/16のでご縁があって久しぶりにFiveMのストリーマーサーバ構築・運用していました。準備期間から入れると、2週間半ほど加算するので約3週間ほどFiveMやLuaを毎日触っていたことになります。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/shift-log/about.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/about.html</guid>
+				<description>&lt;h3 id=&#34;welcome-to-my-web-log&#34;&gt;Welcome to My Web log!&lt;/h3&gt;&#xA;&lt;p&gt;セキュリティエンジニアとして学びながら働き、日々の学びや趣味の記録を綴っているブログです。&lt;/p&gt;&#xA;&lt;h4 id=&#34;-profile&#34;&gt;💻 Profile&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Job:&lt;/strong&gt; セキュリティエンジニア&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tech Interests:&lt;/strong&gt; サイバーセキュリティ / ハッキング / システム解析&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;-hobby--life&#34;&gt;🏎️ Hobby &amp;amp; Life&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Drive &amp;amp; Ride:&lt;/strong&gt; 車とバイクを愛するモータースポーツ好き&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Music:&lt;/strong&gt; ロックミュージック全般。ドラムとベースを少し嗜みます🥁🎸&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Game:&lt;/strong&gt; CoD（Call of Duty） / レースシミュレーター🎮&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Outdoor:&lt;/strong&gt; サバイバルゲーム（サバゲー）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;技術的なアウトプットを中心に、趣味のガジェットやライフスタイルについても気ままに発信していきます。&#xA;よろしくどうぞ&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Buy me a coffee</title>
+				<link>http://localhost:1313/shift-log/buy-me-a-coffee.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/buy-me-a-coffee.html</guid>
+				<description>&lt;p&gt;Hi! I am Sal, web designer &amp;amp; developer at WowThemes.net. The free items I create are my side projects and &lt;strong&gt;Mundana for Jekyll&lt;/strong&gt; is one of them. You can find &lt;strong&gt;all the work I release for free &lt;a href=&#34;https://www.wowthemes.net/category/free-themes-templates/&#34;&gt;here&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You have my permission to use the free items I develop in your personal, commercial or client projects. If you&amp;rsquo;d like to reward my work, I would be honored and I could dedicate more time maintaining the free projects.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Categories</title>
+				<link>http://localhost:1313/shift-log/categories.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/categories.html</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Contact</title>
+				<link>http://localhost:1313/shift-log/contact.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/contact.html</guid>
+				<description>&lt;p&gt;Please send your message to Shift-log. We will reply as soon as possible!&lt;/p&gt;&#xA;&lt;form action=&#34;https://formspree.io/wowthemesnet@gmail.com&#34; method=&#34;POST&#34;&gt;&#xD;&#xA;&lt;input type=&#34;text&#34; name=&#34;name&#34; placeholder=&#34;Name*&#34; required&gt;&#xD;&#xA;&lt;input type=&#34;email&#34; name=&#34;_replyto&#34; placeholder=&#34;E-mail Address*&#34; required&gt;&#xD;&#xA;&lt;textarea rows=&#34;8&#34; name=&#34;message&#34; placeholder=&#34;Message*&#34; required&gt;&lt;/textarea&gt;&#xD;&#xA;&lt;input type=&#34;submit&#34; value=&#34;Send&#34;&gt;&#xD;&#xA;&lt;/form&gt;</description>
+			</item>
+			<item>
+				<title>Privacy Policy</title>
+				<link>http://localhost:1313/shift-log/privacy-policy.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/privacy-policy.html</guid>
+				<description>&lt;p&gt;&amp;ldquo;Shift-log&amp;rdquo; takes your privacy seriously. This privacy policy explains the way personal information is collected and used.&lt;/p&gt;&#xA;&lt;h4 id=&#34;collection-of-routine-information&#34;&gt;Collection of Routine Information&lt;/h4&gt;&#xA;&lt;p&gt;This website tracks basic information about visitors, including IP addresses, browser details, timestamps and referring pages. This information is used for routine administration and maintenance.&lt;/p&gt;&#xA;&lt;h4 id=&#34;cookies&#34;&gt;Cookies&lt;/h4&gt;&#xA;&lt;p&gt;Where necessary, this website uses cookies to store information about a visitor&amp;rsquo;s preferences and history.&lt;/p&gt;&#xA;&lt;h4 id=&#34;security&#34;&gt;Security&lt;/h4&gt;&#xA;&lt;p&gt;The security of your personal information is important to us, but no method of transmission over the Internet or electronic storage is 100% secure.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Shifu-totto</title>
+				<link>http://localhost:1313/shift-log/author-shifu-totto.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/author-shifu-totto.html</guid>
+				<description>&lt;p&gt;Shifu-totto&lt;/p&gt;&#xA;&lt;p&gt;セキュリティエンジニア。気になったことを技術、ゲーム、日々の記録として発信しています。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://x.com/Shifu_totto&#34;&gt;X&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tags</title>
+				<link>http://localhost:1313/shift-log/tags.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/tags.html</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>記事一覧</title>
+				<link>http://localhost:1313/shift-log/authors-list.html</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/shift-log/authors-list.html</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

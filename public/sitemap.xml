@@ -2,12 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shifu-totto.github.io/shift-log/archives/</loc>
-  </url><url>
     <loc>https://shifu-totto.github.io/shift-log/categories/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/tags/fivem/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/categories/game/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/tags/gta/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/post/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/tags/qbox/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/post/review-of-natown/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shifu-totto.github.io/shift-log/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shifu-totto.github.io/shift-log/tags/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shifu-totto.github.io/shift-log/archives/</loc>
   </url>
 </urlset>

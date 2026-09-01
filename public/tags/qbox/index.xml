@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Shift-log</title>
-		<link>https://shifu-totto.github.io/shift-log/</link>
-		<description>Recent content on Shift-log</description>
+		<title>QBox on Shift-log</title>
+		<link>https://shifu-totto.github.io/shift-log/tags/qbox/</link>
+		<description>Recent content in QBox on Shift-log</description>
 		<generator>Hugo</generator>
 		<language>ja</language>
 		
@@ -12,7 +12,7 @@
 		
 			<lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://shifu-totto.github.io/shift-log/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://shifu-totto.github.io/shift-log/tags/qbox/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Review of NATOWN(FiveM) 市長目線振り返り</title>
 				<link>https://shifu-totto.github.io/shift-log/post/review-of-natown/</link>

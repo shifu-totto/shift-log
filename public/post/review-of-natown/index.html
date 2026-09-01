@@ -1,0 +1,844 @@
+<!doctype html><html lang="ja"><head>
+  
+
+<title>Review of NATOWN(FiveM) 市長目線振り返り | Shift-log</title>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/shift-log/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/shift-log/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/shift-log/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/shift-log/favicon/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href=" /shift-log/favicon/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <link rel="shortcut icon" href="/shift-log/favicon/favicon.ico" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta
+    property="og:title"
+    content="Review of NATOWN(FiveM) 市長目線振り返り"
+  />
+  
+    
+    
+      
+        
+          <link
+            rel="stylesheet"
+            href="/shift-log/css/style.2780cfd5cc04a678e92b616f0d66775e924c6770b5eb63a06f5ced78f2b52431.css"
+            integrity="sha256-J4DP1cwEpnjpK2FvDWZ3XpJMZ3C162Ogb1ztePK1JDE="
+            crossorigin="anonymous"
+          />
+        
+      
+    
+  
+  
+
+
+
+<meta name="description" content="NA TOWN サーバー構築苦労話" />
+<meta property="og:site_name" content="Shift-log" />
+<meta property="og:description" content="NA TOWN サーバー構築苦労話" />
+<meta property="og:url" content="https://shifu-totto.github.io/shift-log/post/review-of-natown/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="" />
+
+  <link rel="canonical" href="https://shifu-totto.github.io/shift-log/post/review-of-natown/" />
+
+<meta name="twitter:description" content="NA TOWN サーバー構築苦労話" />
+<meta property="article:published_time" content="2026-08-24T00:00:00&#43;00:00" />
+  <meta property="article:updated_time" content="2026-08-24T00:00:00&#43;00:00" />
+
+
+
+
+
+
+  <meta property="og:image" content="https://shifu-totto.github.io/shift-log/" />
+  <meta
+    property="og:image:url"
+    content="https://shifu-totto.github.io/shift-log/"
+  />
+
+
+  
+  <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800 shadow-sm">
+  <div class="container max-w-7xl mr-auto ml-auto">
+    <nav class="flex items-center justify-between flex-wrap px-6 py-4">
+      <div class="flex items-center flex-no-shrink text-white mr-6">
+        <a href="https://shifu-totto.github.io/shift-log/"
+          >
+            <span class="font-semibold text-xl tracking-tight"
+              >Shift-log</span
+            >
+          </a
+        >
+      </div>
+      <div class="flex md:hidden">
+        <div class="py-2">
+          <button
+            onclick="toggleDarkMode()"
+            class="focus-visible:outline-none mr-1 text-white/80 hover:text-white transition-colors duration-200 cursor-pointer"
+            aria-label="Darkmode Toggle Button"
+          >
+            <span id="icon-moon"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"/></svg></span
+    ></span
+>
+</span
+            >
+            <span id="icon-sun" class="hidden"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm113-170q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Z"/></svg></span
+    ></span
+>
+</span
+            >
+          </button>
+          <span class="text-white">|</span>
+        </div>
+        <button
+          id="hamburgerbtn"
+          class="flex items-center px-3 py-2 text-white/80 hover:text-white transition-colors duration-200"
+          aria-label="Hamburger Button"
+        >
+          <span
+      class="inline-flex align-middle pb-0.5 text-2xl"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span
+    ></span
+>
+
+        </button>
+      </div>
+      <div
+        class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto"
+        id="mobileMenu"
+      >
+        <div class="text-sm lg:grow"></div>
+        <div class="flex flex-col md:flex-row gap-2">
+          
+            <a
+              href="/shift-log/"
+              class="no-underline font-medium text-sm block sm:inline-block sm:mt-0 text-white/80 hover:text-white mr-4 py-2 sm:py-0 transition-colors duration-200"
+            >
+              ホーム
+            </a>
+          
+            <a
+              href="/shift-log/about/"
+              class="no-underline font-medium text-sm block sm:inline-block sm:mt-0 text-white/80 hover:text-white mr-4 py-2 sm:py-0 transition-colors duration-200"
+            >
+              About
+            </a>
+          
+            <a
+              href="/shift-log/contact/"
+              class="no-underline font-medium text-sm block sm:inline-block sm:mt-0 text-white/80 hover:text-white mr-4 py-2 sm:py-0 transition-colors duration-200"
+            >
+              Contact
+            </a>
+          
+        </div>
+        <div class="text-white hidden md:block">
+          <span>|</span>
+          <button
+            onclick="toggleDarkMode()"
+            class="focus-visible:outline-none hover:opacity-50 duration-200 ml-2 cursor-pointer"
+            aria-label="Darkmode Toggle Button"
+          >
+            <span id="icon2-moon"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"/></svg></span
+    ></span
+>
+</span
+            >
+            <span id="icon2-sun" class="hidden"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm113-170q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Z"/></svg></span
+    ></span
+>
+</span
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<style>
+  .active {
+    display: block;
+  }
+</style>
+
+<script>
+  let hamburger = document.getElementById("hamburgerbtn");
+
+  let mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active");
+  });
+</script>
+<div
+        class="container max-w-7xl mx-auto mt-4 grow px-5 lg:px-0"
+        id="content"
+      >
+        <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <main class="col-span-3 lg:col-span-2 dark:text-white">
+  
+    <article class="bg-white dark:bg-warmgray-900 rounded-xl shadow-sm p-6 my-4">
+      <h1 class="mb-3 text-4xl font-bold tracking-tight leading-tight">Review of NATOWN(FiveM) 市長目線振り返り</h1>
+      <aside id="meta">
+        <div class="flex flex-wrap items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
+          <section>
+            <h4 id="date" class="inline-flex items-center gap-1">
+              <span
+      class="inline-flex align-middle pb-0.5 text-sm"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg></span
+    ></span
+>
+2026/08/24
+            </h4>
+          </section>
+          
+          <div id="tags" class="inline-flex flex-wrap items-center gap-1.5">
+            <span
+      class="inline-flex align-middle pb-0.5 text-sm"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Z"/></svg></span
+    ></span
+>
+
+            
+            <a href='https://shifu-totto.github.io/shift-log/tags/fivem' class="bg-sky-50 text-sky-700 rounded-full px-3 py-0.5 text-xs font-medium hover:bg-sky-100 transition-colors duration-150 dark:bg-warmgray-700 dark:text-sky-400 dark:hover:bg-warmgray-600">FiveM</a>
+            
+            <a href='https://shifu-totto.github.io/shift-log/tags/gta' class="bg-sky-50 text-sky-700 rounded-full px-3 py-0.5 text-xs font-medium hover:bg-sky-100 transition-colors duration-150 dark:bg-warmgray-700 dark:text-sky-400 dark:hover:bg-warmgray-600">GTA</a>
+            
+            <a href='https://shifu-totto.github.io/shift-log/tags/qbox' class="bg-sky-50 text-sky-700 rounded-full px-3 py-0.5 text-xs font-medium hover:bg-sky-100 transition-colors duration-150 dark:bg-warmgray-700 dark:text-sky-400 dark:hover:bg-warmgray-600">QBox</a>
+            
+          </div>
+          
+        </div>
+      </aside>
+      
+      
+      <div class="prose md:prose-base lg:prose-lg max-w-none dark:prose-invert mt-5" data-pagefind-body><h2 id="はじめに">はじめに</h2>
+<p>NA Town<br>
+つい先日の8/10 - 8/16のでご縁があって久しぶりにFiveMのストリーマーサーバ構築・運用していました。<br>
+準備期間から入れると、2週間半ほど加算するので約3週間ほどFiveMやLuaを毎日触っていたことになります</p>
+<p>改めてサーバーの構築、運用、運営メンバーに選んでくれたNAの皆さん、ありがとうございました。</p>
+<p>イベント終了から執筆時点でこれもまた1週間半ですが、イベント用のDisocrdサーバーでは<br>
+未だに参加者さんが頻繁に連絡を取り合う活発さも伺えます。<br>
+（参加者さんも楽しんでくれたんよね？？と思う今日この頃です）</p>
+<p><img src="/images/natown.jpg" alt="NATOWN"></p>
+<h3 id="さて">さて</h3>
+<p>イベントが終わってから参加者さんやNAのメンバーではNA Townの振り返りの配信をしているのを実は知っていました、<br>
+各々がクリップや刑事事件から珍事件まで振り返っていたようです。</p>
+<p>私自身はゲーム内にはいましたが、あまり参加者さんとは絡むことはありませんでした・・・・が！<br>
+市長目線、いわゆる技術者（端くれ）目線でNA TownというFiveMサーバーを振り返ってみようと思います。</p>
+<p>もしFiveMでGTAのMODサーバーを構築しようとし困っている誰かに届けばいいなと思います。</p>
+<h2 id="環境">環境</h2>
+<p>NA TownはレンタルVPS上のUbuntu OS上で稼働していました<br>
+SSHしてスペックを見たわけではありませんので、CPUスペックは不明ですが（VPSなんで/cpuinfoみてもあんまりアテになんなかったり…）<br>
+メモリは100人近く同時接続をする想定でしたので124GBを積んでいます<br>
+DBはmysqlです、一度MariaDBで動かしたことがあるのですが連携がうまく行かなかった思い出があります<br>
+（あとからわかりましたがMariaDBのユーザー認証の仕組みが変わった直後でした、<br>
+その後新しい認証方式をOFFにしましたが、フレームワークからDBへの認証がことごとく弾かれました）</p>
+<p>レンタルVPSのかゆいところではありますが<br>
+他利用者のリソース使用料が一時的に跳ね上がった場合は、契約しているVPSの空きリソースを一部他利用者の割り当てることがあります<br>
+そして何よりGTA/FiveMに限らずレンタルVPSでゲームサーバーを構築するときに割と大事なのがネットワークのバンドワイドです。</p>
+<p>OS自体をホストするハードウェアリソースは契約時に様々なプランから自分でカスタムすることができますが<br>
+基本NWのバンドワイドやスピードはVPS利用者からは何も変更ができません、できてせいぜいOSへSSHしてMTUの数字を軽くいじって利用者側の体感が少し変わるか<br>
+変わらないかくらいです・・・</p>
+<p>実際イベント開始の初日と二日後、最終日の大型イベント時などに大量のタイムアウトが発生しました<br>
+75人程サーバーに参加していました、UDPパケットは一切受け取れず、キャラクタのステータスの保存の処理が走ったタイミングで40人～50人程一気に切断されました<br>
+接続断が発生したときは平均レイテンシが230ms-250msを記録していました<br>
+（サーバーログにもバンドワイドのスループットに対してのAlertが大量に出ていました、プレイヤーの切断時はすべてタイムアウトで落ちてます）</p>
+<p><strong>お客様の中にバンドワイドが広いVPSをご存じの方はいらっしゃいませんか???</strong>
+GTAとかRUSTとかバンドワイドが原因でラグが多いときあるんですよね・・・</p>
+<h2 id="スクリプトの話">スクリプトの話</h2>
+<p>筆者は2023年頃にQBcoreの一部のScriptを書いたりすることを皮切りに
+そこから3回程QBcore対応のFiveMサーバーを依頼を元に作成していました。<br>
+元プログラマでもなんでもなく、インフラエンジニア出身なので、ゲーム内で使うLuaを触ったのも2023年が初めてです<br>
+（必要に迫られてやっとCやPythonを書く程度です）</p>
+<p>NA TownのフレームワークはQBcoreではなく Qboxを利用しました<br>
+先ほどのピークタイムにタイムアウト問題で参加者さんには不便をかけましたが<br>
+結論から言うとこのフレームワークの選択自体に間違いはなかったと判断しています。</p>
+<p>理由としては</p>
+<ul>
+<li>QBcoreより効率性が高い</li>
+<li>現在多くのScriptはox_libとoxmysqlがデファクトスタンダードになっているが、Qboxはoxmysqlとoxのライブラリが最初から入っています</li>
+<li>QBcoreで利用できるScriptと互換性が高い（後述）</li>
+</ul>
+<p>QBocreとQBoxのリソース効率性は実際に確かめたわけではないので、どれほどの違いがあるのかはわかりません（公式情報鵜呑み）<br>
+QBcoreワイヤーフレームを入れた後に、ox_libやoxmysqlを入れてその上で追加スクリプトを入れる手間が省けます
+QBcoreを利用していたらタイムアウトは50人じゃ済まなかった可能性もあります</p>
+<p>そして<strong>スクリプト・・・・</strong></p>
+<p>ここが苦労話の本題かもしれません</p>
+<h1 id="結論全然互換性ねぇ">結論：全然互換性ねぇ</h1>
+<p>QBcoreとQboxのワイヤーフレームは確かに似たような書かれ方をしています<br>
+なので最悪Scriptを導入し動かなくてもQBox用に直すのは<strong>技術的には可能</strong>です</p>
+<h1 id="が">が！</h1>
+<p><strong>Scriptによってソースコード全然ちゃうやんけ！！！！！！！</strong></p>
+<h4 id="case-1">Case 1</h4>
+<ul>
+<li>無料スクリプトのタグに「Qbox」の表記があり、READMEなどにはフレームワークにまつわるConfigの記載がない<br>
+私が悪い（？）のかもしれませんが、ソースコードを見るまではQbox環境にScriptを放り込むことで勝手に動いてくれると思ってました。</li>
+</ul>
+<p><strong>「動いて」はいるが、「正しく動いて」はいなかった</strong><br>
+サーバー側からするとScriptは読み込まれ何かしらかのトリガーを待っている状態でもありましたが<br>
+実際にScriptの処理の途中でバグる・・・なーんてことが<strong>1日に6回はありました</strong><br>
+ソースコードみたら、メタデータや変数を返す処理がQBcore用になっているじゃぁありやせんか<br>
+<strong>君ちょっと話違くない??</strong></p>
+<p>なんでメタデータの取得は問題なくできて、返す処理でわけわからんこと言ってくるんだよ・・・<br>
+ソースコードを見てアタリがつけれそうなScriptは自力で改修しました。</p>
+<p>※アイテムのバッグで街中でどこでも着替えれるバッグのスクリプトを改修したので公開してます<br>
+よかったら使ってみてね</p>
+<p><a href="https://github.com/shifu-totto/mt-clothingbag-for-qbox">mt-clothing-bag-for-qbox</a>
+fork元：<a href="https://github.com/MT-Scripts/mt-clothingbag">mt-clothing-bag</a></p>
+<h4 id="case-2">Case 2</h4>
+<ul>
+<li>Bridgeがあるのに動かねぇ
+異なるフレームワークに対応できるように、ScriptによってはScriptの中自体にBridgeという<br>
+「別のフレームワーク用にデータの受け渡し方式を変更する」という素晴らしいScriptもあります</li>
+</ul>
+<p>いちいち手動でQBcore用のデータの受け渡しの方法のソースコードをQbox用に変換しなくてもScript側が自動でやってくれる素敵機能です。<br>
+大体ScriptのConfigに「利用しているフレームワークを入力する」欄があるので、そこを編集してあげれば自動で正しく動いてくれます。</p>
+<h1 id="がしかし-but-takashi">が！しかし But Takashi</h1>
+<p>動かないんだなこれが<br>
+<img src="/images/naindana.jpg" alt="nainndana_korega"></p>
+<p>※ないんだな、これが この笑顔好き</p>
+<p>Bridgeが正しく動作してねーじゃねぇか！ソースコード編集したほうが楽なんじゃねぇのこれ??<br>
+Bridgeのソースコードみたらフレームワーク事の分岐がありすぎるYO</p>
+<p>ここら辺から動かないスクリプトや、動かせそうでも改修に時間がかかりそうなScriptは入れないようにし<br>
+代替えのScriptを探すようにしました（結果こっちのほうが早かったorz）</p>
+<p>何がひどいって、BridgeがあるようなScriptはアップデートが頻繁にあります<br>
+いわゆる優良Scriptです、ダジャレじゃないですが有料のものにも多くみられました<br>
+有料Scriptの紹介文に「QBox対応」を謳っているいるものもあります</p>
+<p>のくせにポン付けでは動きません <strong>じゃ書くな！！！</strong></p>
+<p>これがあるおかげで動いていたScriptもありましたが、QBox互換を謳いながらBridgeがそもそもないものもありました<br>
+（ソースコード見たらわかるしょ？あとはそっちで好きに編集して なスタンスなんでしょうかね）</p>
+<p>海外クオリティというかなんというか・・・<br>
+ScriptやMOD文化的に動かないことは多々あるのは承知でしたが<br>
+あまりにも今回多すぎました、ましてや有償のScriptでQBox互換を謳いながら互換性ないとかも・・・</p>
+<p>力技で治せるものはありましたが、時間的制約で治せなかったものもあります</p>
+<p>高スペックなVPSのレンタル代は月に1万を超えますが、開発や構築のために1か月レンタルするのも出資者には痛手でしょう<br>
+なんならScriptのSourceによっては既存のコードを書き換えるより、Assetだけ借りてSourceを自分で書いたほうが早いときもありました</p>
+<p>なんにせよ久しぶりのコーディングとサーバー運営は楽しかったですが、海外クオリティのものにかなり振り回された感じがします<br>
+（あれなかったらもう少し楽だったなぁ、もう2.3はScriptを追加できたなぁ・・・）</p>
+<h1 id="謝辞">謝辞</h1>
+<p><strong>サーバーの運営に呼んでくれたNAの皆さん(敬称略)</strong></p>
+<p><a href="https://x.com/kyanta071">煙帝きゃんた</a>
+<a href="https://x.com/interun_V">いんてるん</a>
+<a href="https://x.com/773_kai">那々弥廻</a>
+<a href="https://x.com/vivi_snocele">ビビ・セレスト</a>
+<a href="https://x.com/okOjOcharshu">おこじょちゃーしゅー</a></p>
+<h1 id="引用文献">引用文献</h1>
+<p>QBox Docs</p>
+</div>
+      
+      <aside id="meta">
+        
+        <hr class="my-4 border-gray-100 dark:border-warmgray-700">
+        <div id="categories" class="flex flex-wrap items-center gap-2">
+          <span
+      class="inline-flex align-middle pb-0.5 text-base text-gray-400"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Z"/></svg></span
+    ></span
+>
+
+          
+          <a href='https://shifu-totto.github.io/shift-log/categories/game' class="bg-slate-100 text-slate-700 rounded-full px-3 py-1 text-sm font-medium hover:bg-slate-200 transition-colors duration-150 dark:bg-warmgray-700 dark:text-slate-300 dark:hover:bg-warmgray-600">Game</a>
+          
+        </div>
+        
+      </aside>
+    </article>
+    <div class="bg-white dark:bg-warmgray-900 rounded-xl shadow-sm p-5 my-4">
+    <p
+      class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3"
+    >
+      Share this post
+    </p>
+    <div class="flex flex-wrap gap-2"><a
+            href="https://twitter.com/intent/tweet?text=Review&#43;of&#43;NATOWN%28FiveM%29&#43;%E5%B8%82%E9%95%B7%E7%9B%AE%E7%B7%9A%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A&url=https%3A%2F%2Fshifu-totto.github.io%2Fshift-log%2Fpost%2Freview-of-natown%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Share on X (Twitter)"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors duration-200"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></span
+    ></span
+>
+<span
+              >X</span
+            >
+          </a><a
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fshifu-totto.github.io%2Fshift-log%2Fpost%2Freview-of-natown%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Share on Facebook"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></span
+    ></span
+>
+<span
+              >Facebook</span
+            >
+          </a><a
+            href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fshifu-totto.github.io%2Fshift-log%2Fpost%2Freview-of-natown%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Share on LINE"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-green-500 text-white text-sm font-medium hover:bg-green-600 transition-colors duration-200"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+  <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.15.15 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157m.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832l-.013-.015v-.001l-.01-.01-.003-.003-.011-.009h-.001L7.88 4.79l-.003-.002-.005-.003-.008-.005h-.002l-.003-.002-.01-.004-.004-.002-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.2.2 0 0 0 .039.038l.001.001.01.006.004.002.008.004.007.003.005.002.01.003h.003a.2.2 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.16.16 0 0 0-.108.044h-.001l-.001.002-.002.003a.16.16 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.16.16 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+</svg></span
+    ></span
+>
+<span
+              >LINE</span
+            >
+          </a><a
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fshifu-totto.github.io%2Fshift-log%2Fpost%2Freview-of-natown%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Share on LinkedIn"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-700 text-white text-sm font-medium hover:bg-blue-800 transition-colors duration-200"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></span
+    ></span
+>
+<span
+              >LinkedIn</span
+            >
+          </a><a
+            href="https://wa.me/?text=Review&#43;of&#43;NATOWN%28FiveM%29&#43;%E5%B8%82%E9%95%B7%E7%9B%AE%E7%B7%9A%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A%20https%3A%2F%2Fshifu-totto.github.io%2Fshift-log%2Fpost%2Freview-of-natown%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Share on WhatsApp"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-green-600 text-white text-sm font-medium hover:bg-green-700 transition-colors duration-200"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg></span
+    ></span
+>
+<span
+              >WhatsApp</span
+            >
+          </a><a
+            href="mailto:?subject=Review&#43;of&#43;NATOWN%28FiveM%29&#43;%E5%B8%82%E9%95%B7%E7%9B%AE%E7%B7%9A%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A&body=https%3A%2F%2Fshifu-totto.github.io%2Fshift-log%2Fpost%2Freview-of-natown%2F"
+            aria-label="Share by email"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gray-500 text-white text-sm font-medium hover:bg-gray-600 transition-colors duration-200"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></span
+    ></span
+>
+<span
+              >Email</span
+            >
+          </a><button
+            id="share-copy-btn"
+            onclick="copyShareLink(this)"
+            title="Copy link"
+            aria-label="Copy link"
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gray-100 text-gray-700 text-sm font-medium hover:bg-gray-200 transition-colors duration-200 cursor-pointer border-0 dark:bg-warmgray-700 dark:text-gray-300 dark:hover:bg-warmgray-600"
+          >
+            <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M318-120q-82 0-140-58t-58-140q0-40 15-76t43-64l134-133 56 56-134 134q-17 17-25.5 38.5T200-318q0 49 34.5 83.5T318-200q23 0 45-8.5t39-25.5l133-134 57 57-134 133q-28 28-64 43t-76 15Zm79-220-57-57 223-223 57 57-223 223Zm251-28-56-57 134-133q17-17 25-38t8-44q0-50-34-85t-84-35q-23 0-44.5 8.5T558-726L425-592l-57-56 134-134q28-28 64-43t76-15q82 0 139.5 58T839-641q0 39-14.5 75T782-502L648-368Z"/></svg></span
+    ></span
+>
+<span
+              >Copy</span
+            >
+          </button></div>
+  </div>
+<script>
+  (function () {
+    const shareUrl = "\"https://shifu-totto.github.io/shift-log/post/review-of-natown/\"";
+    window.copyShareLink = function (btn) {
+      navigator.clipboard.writeText(shareUrl).then(function () {
+        const orig = btn.title;
+        const origContent = btn.innerHTML;
+        btn.title = "Copied!";
+        btn.innerHTML = origContent.replace("Copy", "Copied!");
+        btn.setAttribute("aria-label", "Copied!");
+        setTimeout(function () {
+          btn.title = orig;
+          btn.innerHTML = origContent;
+          btn.setAttribute("aria-label", "Copy link");
+        }, 2000);
+      }).catch(function () {
+        const el = document.createElement("textarea");
+        el.value = shareUrl;
+        el.style.position = "fixed";
+        el.style.opacity = "0";
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+      });
+    };
+  })();
+</script>
+    <div class="bg-white dark:bg-warmgray-900 rounded-xl shadow-sm p-4 my-4">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="col-span-1">
+          
+        </div>
+        <div class="col-span-1">
+          
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+  <div
+  class="
+    col-span-3 lg:col-span-1
+  "
+>
+  
+  
+      
+      <div class="mb-3">
+  <form
+    class="widget-search__form"
+    role="search"
+    method="get"
+    action="https://google.com/search"
+  >
+    <label>
+      <input
+        class="w-full p-3 focus:outline-none rounded-xl shadow-sm text-sm bg-white dark:bg-warmgray-900 text-gray-900 dark:text-white dark:placeholder-gray-300"
+        type="search"
+        placeholder="Search..."
+        value=""
+        name="q"
+        aria-label="Search"
+      />
+    </label>
+    <input class="hidden" type="submit" value="Search" />
+    <input type="hidden" name="sitesearch" value="https://shifu-totto.github.io/shift-log/" />
+  </form>
+</div>
+
+    
+      
+      <div
+  class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+>
+  <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+    <p
+      class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+    >
+      Archives
+    </p>
+  </div>
+  
+    <div class="divide-y divide-gray-100 dark:divide-warmgray-700">
+      
+    </div>
+  
+</div>
+
+    
+      
+      
+  <div
+    class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+  >
+    <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+      <p
+        class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+      >
+        Categories
+      </p>
+    </div>
+    <div class="divide-y divide-gray-100 dark:divide-warmgray-700">
+      
+        <a
+          class="flex items-center justify-between px-5 py-3 hover:bg-gray-50 dark:hover:bg-warmgray-800 transition-colors duration-150 text-sm text-gray-700 dark:text-gray-300"
+          href="https://shifu-totto.github.io/shift-log//categories/game"
+          ><span>Game</span
+          ><span class="text-xs text-gray-400 dark:text-gray-500"
+            >1</span
+          ></a
+        >
+      
+    </div>
+  </div>
+
+
+    
+      
+      
+  <div
+    class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+  >
+    <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+      <p
+        class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+      >
+        Tags
+      </p>
+    </div>
+    <div class="p-4">
+          <a
+            href="/tags/fivem"
+            class="inline-block mr-1.5 mb-1.5"
+          >
+            <span
+              class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+            >
+              fivem
+            </span></a
+          >
+          <a
+            href="/tags/gta"
+            class="inline-block mr-1.5 mb-1.5"
+          >
+            <span
+              class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+            >
+              gta
+            </span></a
+          >
+          <a
+            href="/tags/qbox"
+            class="inline-block mr-1.5 mb-1.5"
+          >
+            <span
+              class="bg-gray-100 text-gray-700 rounded-full px-3 py-1 text-xs font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+            >
+              qbox
+            </span></a
+          >
+    </div>
+  </div>
+
+
+    
+      
+      
+  <div
+    class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+  >
+    <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+      <p
+        class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+      >
+        Social
+      </p>
+    </div>
+    <div class="p-4 flex flex-wrap gap-2">
+      
+        
+          <a
+            href="https://github.com/shifu-totto"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="inline-flex items-center gap-1.5 bg-gray-100 text-gray-700 rounded-full px-3 py-1.5 text-sm font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+          >
+            
+              <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg></span
+    ></span
+>
+
+            
+            <span>GitHub</span>
+          </a>
+        
+      
+        
+          <a
+            href="https://x.com/Shifu_totto"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter / X"
+            class="inline-flex items-center gap-1.5 bg-gray-100 text-gray-700 rounded-full px-3 py-1.5 text-sm font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+          >
+            
+              <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></span
+    ></span
+>
+
+            
+            <span>Twitter / X</span>
+          </a>
+        
+      
+    </div>
+  </div>
+
+
+    
+      
+      
+
+  <div
+    class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+  >
+    <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+      <p
+        class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+      >
+        Recent Posts
+      </p>
+    </div>
+    <div class="divide-y divide-gray-100 dark:divide-warmgray-700">
+        <a
+          href="/shift-log/post/review-of-natown/"
+          class="block px-5 py-3 hover:bg-gray-50 dark:hover:bg-warmgray-800 transition-colors duration-150"
+        >
+          <p
+            class="text-sm font-medium text-gray-900 dark:text-white leading-snug mb-1"
+          >
+            Review of NATOWN(FiveM) 市長目線振り返り
+          </p>
+          <time
+            class="flex items-center text-xs text-gray-500 dark:text-gray-500 gap-1"
+            ><span
+      class="inline-flex align-middle pb-0.5 text-xs"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg></span
+    ></span
+>
+2026/08/24</time
+          >
+        </a>
+    </div>
+  </div>
+
+    
+  
+</div>
+
+  
+</div>
+</div>
+      </div><footer class="bg-gray-800 text-white p-6">
+  
+  <div class="container max-w-7xl mr-auto ml-auto">
+    <p>
+      &copy;
+      2026
+      <a href="https://shifu-totto.github.io/shift-log/" class="duration-200 hover:opacity-50"
+        >Shift-log</a
+      >
+    </p>
+    <p>
+      Powered by
+      <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a
+      >, Theme
+      <a
+        href="https://github.com/opera7133/Blonde"
+        class="duration-200 hover:opacity-50"
+        >Blonde</a
+      >.
+    </p>
+  </div>
+  
+  <script>
+    function setDarkModeIcons(isDark) {
+      var moonIcon1 = document.getElementById("icon-moon");
+      var sunIcon1 = document.getElementById("icon-sun");
+      var moonIcon2 = document.getElementById("icon2-moon");
+      var sunIcon2 = document.getElementById("icon2-sun");
+      if (moonIcon1) moonIcon1.classList.toggle("hidden", isDark);
+      if (sunIcon1) sunIcon1.classList.toggle("hidden", !isDark);
+      if (moonIcon2) moonIcon2.classList.toggle("hidden", isDark);
+      if (sunIcon2) sunIcon2.classList.toggle("hidden", !isDark);
+    }
+    
+    if (
+      document.documentElement.classList.contains("dark") ||
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setDarkModeIcons(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      setDarkModeIcons(false);
+      document.documentElement.classList.remove("dark");
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains("dark")) {
+        setDarkModeIcons(false);
+        document.documentElement.classList.remove("dark");
+        localStorage.theme = "light";
+      } else {
+        setDarkModeIcons(true);
+        document.documentElement.classList.add("dark");
+        localStorage.theme = "dark";
+      }
+    }
+  </script>
+</footer>
+</div>
+  </body>
+</html>

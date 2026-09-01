@@ -10,6 +10,29 @@
 		
 		
 		
+			<lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="https://shifu-totto.github.io/shift-log/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>FiveM</title>
+				<link>https://shifu-totto.github.io/shift-log/tags/fivem/</link>
+				<pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://shifu-totto.github.io/shift-log/tags/fivem/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GTA</title>
+				<link>https://shifu-totto.github.io/shift-log/tags/gta/</link>
+				<pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://shifu-totto.github.io/shift-log/tags/gta/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>QBox</title>
+				<link>https://shifu-totto.github.io/shift-log/tags/qbox/</link>
+				<pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://shifu-totto.github.io/shift-log/tags/qbox/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

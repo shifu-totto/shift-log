@@ -112,7 +112,7 @@ fork元：[mt-clothing-bag](https://github.com/MT-Scripts/mt-clothingbag)
 
 # が！しかし But Takashi
 動かないんだなこれが  
-![nainndana_korega](/images/naindana.jpg)
+![nainndana_korega](static/images/naindana.jpg)
 
 ※ないんだな、これが この笑顔好き  
 

@@ -111,10 +111,8 @@ fork元：[mt-clothing-bag](https://github.com/MT-Scripts/mt-clothingbag)
 大体ScriptのConfigに「利用しているフレームワークを入力する」欄があるので、そこを編集してあげれば自動で正しく動いてくれます。  
 
 # が！しかし But Takashi
-動かないんだなこれが  
 ![nainndana_korega](/shift-log/images/naindana.jpg)
-
-※ないんだな、これが この笑顔好き  
+動かないんだなこれが
 
 Bridgeが正しく動作してねーじゃねぇか！ソースコード編集したほうが楽なんじゃねぇのこれ??  
 Bridgeのソースコードみたらフレームワーク事の分岐がありすぎるYO  

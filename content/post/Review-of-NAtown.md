@@ -144,13 +144,13 @@ ScriptやMOD文化的に動かないことは多々あるのは承知でした�
 
 
 # 謝辞
-**サーバーの運営に呼んでくれたNAの皆さん(敬称略)**
+**サーバーの運営に呼んでくれたNAの皆さん**
 
-[煙帝きゃんた](https://x.com/kyanta071)
-[いんてるん](https://x.com/interun_V)
-[那々弥廻](https://x.com/773_kai)
-[ビビ・セレスト](https://x.com/vivi_snocele)
-[おこじょちゃーしゅー](https://x.com/okOjOcharshu)
+[煙帝きゃんた](https://x.com/kyanta071) さん  
+[いんてるん](https://x.com/interun_V) さん  
+[那々弥廻](https://x.com/773_kai) さん  
+[ビビ・セレスト](https://x.com/vivi_snocele) さん  
+[おこじょちゃーしゅー](https://x.com/okOjOcharshu) さん  
 
 # 引用文献
 QBox Docs

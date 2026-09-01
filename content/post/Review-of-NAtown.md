@@ -17,7 +17,7 @@ NA Town
 未だに参加者さんが頻繁に連絡を取り合う活発さも伺えます。  
 （参加者さんも楽しんでくれたんよね？？と思う今日この頃です）  
 
-![NATOWN](C:\Users\totto\Documents\VScode_Project\Blog\static\images\natown.jpg)
+![NATOWN](\images\natown.jpg)
 
 ### さて  
 イベントが終わってから参加者さんやNAのメンバーではNA Townの振り返りの配信をしているのを実は知っていました、  
@@ -112,7 +112,7 @@ fork元：[mt-clothing-bag](https://github.com/MT-Scripts/mt-clothingbag)
 
 # が！しかし But Takashi
 動かないんだなこれが  
-![nainndana_korega](static/images/naindana.jpg)
+![nainndana_korega](/images/naindana.jpg)
 
 ※ないんだな、これが この笑顔好き  
 
